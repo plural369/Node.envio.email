@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
 
-let emails = ['gabriel.espadoni@investimentosblue.com.br']
+let emails = ['teste@hotmail.com']
 
 function email(email){
   const transporter = nodemailer.createTransport({
@@ -8,14 +8,14 @@ function email(email){
       port: 587,
       secure: false, // true for 465, false for other ports
       auth: {
-          user: "biel15_14@hotmail.com",
+          user: "admin@hotmail.com",
           pass: "***************"
       },
       tls: { rejectUnauthorized: false }
   });
 
   const mailOptions = {
-      from: 'biel15_14@hotmail.com',
+      from: 'admin@hotmail.com',
       to: email,
       subject: 'E-mail enviado usando Node!',
       html: '<div><p> Seja bem vindo novo blue! </p> <br/> <p> Seus dados estão inseridos </p></div>'
