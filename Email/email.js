@@ -9,7 +9,7 @@ function email(email){
       secure: false, // true for 465, false for other ports
       auth: {
           user: "biel15_14@hotmail.com",
-          pass: "Gatriz@36985214"
+          pass: "***************"
       },
       tls: { rejectUnauthorized: false }
   });
